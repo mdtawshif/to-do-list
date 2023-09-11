@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="others/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="container">
+        <div class="add_task row">
+            <h3 class="col">New Task</h3>
+            <input id="taskInput" class="col-8" type="text" placeholder="add task">
+            <button id="addTask" class="col btn btn-primary btn-sm">SAVE</button>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">OPEN</h3>
+                        <div id="hide-open">
+                            <p class="card-text empty">NO TASK ADDED</p>
+                            <button class="btn btn-primary btn-sm">Add Task</button>
+                        </div>
+                        <ol id="allTasks">
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">ON PROGRESS</h3>
+                        <div id="hide-onProgress">
+                            <p class="card-text empty">NO ON PROGRESS TASK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">COMPLETED</h3>
+                        <div id="hide-completedTask">
+                            <p class="card-text empty">NO COMPLETED TASK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">BIN TASK</h3>
+                <div id="hide-binTask">
+                    <p class="card-text empty">NO BIN TASK</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="others/function.js"></script>
+
+</body>
+
+</html>
